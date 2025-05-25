@@ -1,0 +1,256 @@
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="#" class="logo"> Elegance Emporium<span>.</span></a>
+
+    <nav class="navbar ">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Shop</a>
+        <a href="#">Review</a>"
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <a href="#" class="fas fa-search"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+    
+
+</header>
+:root {
+    --yellow: #f7ca17;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+  }
+  
+  section {
+    padding: 2rem 9%;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 2rem 1.5rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--yellow);
+    border-radius: 5rem;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: coral;
+    color: #000;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo {
+    font-size: 3rem;
+    color: var(--yellow);
+    font-weight: bolder;
+  }
+  
+  header .logo span {
+    color: #000;
+  }
+  
+  header .icons a {
+    font-size: 2.5rem;
+    color: rgb(255, 170, 80);
+    margin-left: 1.5rem;
+  }
+  
+  header .icons a:hover {
+    color: coral;
+  }
+  
+  header #toggler {
+    display: none;
+  }
+  
+  header .fa-bars {
+    font-size: 3rem;
+    color: rgb(255, 170, 80);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+  
+  .home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/IMG_0487.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .home .content {
+    max-width: 50rem;
+  }
+  
+  .home .content h3 {
+    font-size: 6rem;
+    color: black;
+  }
+  
+  .home .content span {
+    font-size: 3.5rem;
+    color: var(--yellow);
+    padding: 1rem 0;
+    line-height: 1.5;
+  }
+  
+  .home .content p {
+    font-size: 1.5rem;
+    color: coral;
+    padding: 1rem 0;
+    line-height: 1.5;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+  
+    header {
+      padding: 2rem;
+    }
+  
+    section {
+      padding: 2rem;
+    }
+  
+    .home {
+      background-position: left;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header .fa-bars {
+      display: block;
+    }
+  
+    .navbar-collapse {
+      background: #eee;
+      border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 1.5rem;
+      padding: 1.5rem;
+      background: #fff;
+      border: 0.1rem solid rgba(0, 0, 0, 0.1);
+      display: block;
+    }
+  
+    .home .content h3 {
+      font-size: 4rem;
+    }
+  
+    .home .content span {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+  }
+
+  
+
+  <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elegance Emporium</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+
+            <a href="#" class="logo"> Elegance Emporium<span>.</span></a>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">EE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="skills.html">Shop</a></li>
+                            <li class="nav-item"><a class="nav-link" href="education.html">Reviews</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </nav>
+
+            <div class="icons">
+                <a href="#" class="fas fa-search"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-user"></a>
+            </div>
+
+        </header>
+        <section class="home" id="home">
+
+            <div class="content">
+                <h3>Welcome</h3>
+                <span>Your one-stop shop for style</span>
+                <p>Discover the latest trends in fashion and accessories at Elegance Emporium. Shop now for exclusive deals!</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </section>
+    </body>
+</html>
