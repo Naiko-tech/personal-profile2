@@ -23,17 +23,14 @@ nav a:hover{
 }
 
 .about-section, .skills-section, .education-section, .contact-section {
-    padding: 200px 0;
+    padding: 20px 0;
 }
 
 a:hover{
   text-decoration: underline;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
+
 
 ul li {
     background: #f8f9fa;
